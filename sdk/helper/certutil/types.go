@@ -1,6 +1,8 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+
+
 // Package certutil contains helper functions that are mostly used
 // with the PKI backend but can be generally useful. Functionality
 // includes helpers for converting a certificate/private key bundle

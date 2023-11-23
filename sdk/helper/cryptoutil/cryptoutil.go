@@ -1,6 +1,8 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+
+
 package cryptoutil
 
 import "golang.org/x/crypto/blake2b"

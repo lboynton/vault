@@ -1,5 +1,6 @@
 // Copyright (c) HashiCorp, Inc.
-// SPDX-License-Identifier: MPL-2.0
+// SPDX-License-Identifier: BUSL-1.1
+
 
 // Package ocsp implements an OCSP responder based on a generic storage backend.
 // It provides a couple of sample implementations.

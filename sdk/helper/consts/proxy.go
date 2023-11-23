@@ -1,6 +1,8 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+
+
 package consts
 
 // ProxyPathCacheClear is the path that the proxy will use as its cache-clear
