@@ -1,3 +1,8 @@
+{{!
+  Copyright (c) HashiCorp, Inc.
+  SPDX-License-Identifier: MPL-2.0
+~}}
+
 <PkiPaginatedList @listRoute="issuers.index" @list={{@issuers}}>
   <:actions>
     <ToolbarLink @route="issuers.import" data-test-generate-issuer="import">
