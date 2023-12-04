@@ -20,7 +20,7 @@ kill_socket_listener() {
 }
 
 test_socket_listener() {
-  nc -zvdw 2 127.0.0.1 "$SOCKET_PORT"
+  nc -zvw 2 127.0.0.1 "$SOCKET_PORT" < /dev/null
 }
 
 start_socket_listener() {
@@ -32,7 +32,7 @@ start_socket_listener() {
   # Run nc to listen on port 9090 for the socket auditor. We spawn nc
   # with nohup to ensure that the listener doesn't expect a SIGHUP and
   # thus block the SSH session from exiting or terminating on exit.
-  nohup nc -kld "$SOCKET_PORT" >> /tmp/vault-socket.log 2>&1 &
+  nohup nc -kl "$SOCKET_PORT" >> /tmp/vault-socket.log 2>&1 < /dev/null &
 }
 
 read_log() {
